@@ -1,0 +1,22 @@
+{
+	"geode": "3.2.0",
+	"gd": {
+		"win": "2.206",
+		"android": "2.206",
+		"mac": "2.206",
+		"ios": "2.206"
+	},
+	"id": "timestepyt.eventlevels",
+	"name": "Event Levels",
+	"version": "v1.0.0",
+	"developer": "TimeStepYT",
+	"description": "Allows you to use the Event Levels button",
+	"settings": {
+		"useDaily": {
+			"name": "Modified Daily Page",
+			"description": "Use a modified version of the <co>Daily Page</c>. Turn off for broken original <cp>Event Levels</c> page",
+			"type": "bool",
+			"default": true
+		}
+	}
+}
