@@ -4,8 +4,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64")
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
-set(GEODE_BINDINGS_REPO_PATH "C:\\Users\\herwi\\Documents\\geodemods\\bindings")
-
 set(CMAKE_SUPPRESS_DEVELOPER_WARNINGS 1 CACHE INTERNAL "Suppress cmake developer mode warnings")
 
 project(EventLevels VERSION 1.0.0)

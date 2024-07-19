@@ -7,6 +7,8 @@
 
 using namespace geode::prelude;
 
+// THIS IS MY VERY FIRST MOD, MADE JUST TO TEST
+
 const char* getTextureName() {
     int randnum = rand() % 12;
     std::ostringstream iconlol;
