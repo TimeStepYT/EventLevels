@@ -6,7 +6,7 @@ class $modify(DailyLevelNodeHook, DailyLevelNode) {
     struct Fields {
         bool m_skip = false;
     };
-#ifndef GEODE_IS_MAC
+#ifndef GEODE_IS_MACOS
     void onSkipLevel(CCObject * sender) {
         if (m_fields->m_skip) {
             DailyLevelNode::onSkipLevel(sender);
