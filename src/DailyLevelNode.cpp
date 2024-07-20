@@ -6,6 +6,7 @@ class $modify(DailyLevelNodeHook, DailyLevelNode) {
     struct Fields {
         bool m_skip = false;
     };
+#ifndef GEODE_IS_MAC
     void onSkipLevel(CCObject * sender) {
         if (m_fields->m_skip) {
             DailyLevelNode::onSkipLevel(sender);
@@ -24,6 +25,7 @@ class $modify(DailyLevelNodeHook, DailyLevelNode) {
             }
         );
     }
+#endif
     bool init(GJGameLevel * level, DailyLevelPage * page, bool isNew) {
         if (!DailyLevelNode::init(level, page, isNew)) return false;
         auto hideSprite = this->getChildByID("uproxide.animated_fire/hide-spr");
