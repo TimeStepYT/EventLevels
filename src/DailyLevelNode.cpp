@@ -28,18 +28,7 @@ class $modify(DailyLevelNodeHook, DailyLevelNode) {
 #endif
     bool init(GJGameLevel * level, DailyLevelPage * page, bool isNew) {
         if (!DailyLevelNode::init(level, page, isNew)) return false;
-        auto hideSprite = this->getChildByID("uproxide.animated_fire/hide-spr");
-        if (hideSprite != nullptr) {
-            cocos2d::ccColor3B color;
-            if (atEvent) {
-                color.r = 0x3f;
-                color.g = 0x09;
-                color.b = 0x7b;
-                static_cast<CCSprite*>(hideSprite)->setColor(color);
-            }
-            else return true;
-        }
-        if (!Mod::get()->getSettingValue<bool>("useDaily")) return true;
+        if (!Mod::get()->getSettingValue<bool>("useDaily") || !atEvent) return true;
         if (this->getChildByID("crown-sprite") == nullptr)
             return true;
         auto dn = this->getChildByID("background");
