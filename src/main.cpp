@@ -19,4 +19,3 @@ class $modify(MyCreatorLayer, CreatorLayer) {
         return true;
     }
 };
-
