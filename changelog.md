@@ -1,5 +1,8 @@
 # Event Levels changelog
 
+## 1.0.3
+- Add disclaimer to the about page (sorry)
+
 ## 1.0.2
 - <cb>Animated Fire</c> specific tweaks <cy>no longer needed</c> since it now uses a CCClippingNode instead of a background colored sprite!
 
