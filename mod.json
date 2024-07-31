@@ -1,5 +1,5 @@
 {
-	"geode": "3.3.0",
+	"geode": "3.4.0",
 	"gd": {
 		"win": "2.206",
 		"android": "2.206",
@@ -26,6 +26,12 @@
 			"description": "Use a modified version of the <co>Daily Page</c>. Turn off for broken original <cp>Event Levels</c> page",
 			"type": "bool",
 			"default": true
+		},
+		"skipPopup": {
+			"name": "Ignore Skip Popup",
+			"description": "Disables the popup when trying to skip a <co>Daily Level</c>",
+			"type": "bool",
+			"default": false
 		}
 	}
 }
