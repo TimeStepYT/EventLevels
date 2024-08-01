@@ -13,7 +13,7 @@ class $modify(DailyLevelNodeHook, DailyLevelNode) {
             return;
         }
 
-        if(!Mod::get()->getSettingValue<bool>("skipPopup")) {
+        if(Mod::get()->getSettingValue<bool>("enablePopup") && atEvent) {
             createQuickPopup(
                 "Nuh uh",
                 "You are <cr>NOT</c> skipping a daily level!",

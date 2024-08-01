@@ -27,9 +27,9 @@
 			"type": "bool",
 			"default": true
 		},
-		"skipPopup": {
-			"name": "Ignore Skip Popup",
-			"description": "Disables the popup when trying to skip a <co>Daily Level</c>",
+		"enablePopup": {
+			"name": "Secret Skip Popup",
+			"description": "Enables secret popup when trying to skip an <cp>Event Level</c>",
 			"type": "bool",
 			"default": false
 		}
