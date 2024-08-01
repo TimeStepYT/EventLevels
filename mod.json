@@ -8,7 +8,7 @@
 	},
 	"id": "timestepyt.eventlevels",
 	"name": "Event Levels",
-	"version": "v1.0.3",
+	"version": "v1.0.4",
 	"developer": "TimeStepYT",
 	"description": "Allows you to use the Event Levels button",
     "repository": "https://github.com/Reinmmar/EventLevels",
