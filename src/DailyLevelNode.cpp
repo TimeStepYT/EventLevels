@@ -12,18 +12,25 @@ class $modify(DailyLevelNodeHook, DailyLevelNode) {
             DailyLevelNode::onSkipLevel(sender);
             return;
         }
-        createQuickPopup(
-            "Nuh uh",
-            "You are <cr>NOT</c> skipping a daily level!",
-            "Fine.",
-            "PRETTY PLEASE!!!",
-            [this, sender](auto, bool btn2) {
-                if (btn2) {
-                    m_fields->m_skip = true;
-                    this->onSkipLevel(sender);
+
+        if(!Mod::get()->getSettingValue<bool>("skipPopup")) {
+            createQuickPopup(
+                "Nuh uh",
+                "You are <cr>NOT</c> skipping a daily level!",
+                "Fine.",
+                "PRETTY PLEASE!!!",
+                [this, sender](auto, bool btn2) {
+                    if (btn2) {
+                        m_fields->m_skip = true;
+                        this->onSkipLevel(sender);
+                    }
                 }
-            }
-        );
+            );
+        }
+        else {
+            DailyLevelNode::onSkipLevel(sender);
+            return;
+        }
     }
 #endif
     bool init(GJGameLevel * level, DailyLevelPage * page, bool isNew) {
