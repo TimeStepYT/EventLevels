@@ -31,7 +31,7 @@
 			"name": "Secret Skip Popup",
 			"description": "Enables secret popup when trying to skip an <cp>Event Level</c>",
 			"type": "bool",
-            "platforms": ["macos"],
+            "platforms": ["win", "android"],
 			"default": false
 		}
 	}
