@@ -1,5 +1,9 @@
 # Event Levels changelog
 
+## 1.0.4
+- Made the stupid joke when skipping an event level an option (thanks [polskidevv](https://github.com/polskidevv))
+- Bumped Geode version
+
 ## 1.0.3
 - Add disclaimer to the about page (sorry)
 
