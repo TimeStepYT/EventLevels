@@ -21,6 +21,7 @@ class $modify(MyDailyLevelPage, DailyLevelPage) {
 
         DailyLevelPage::dailyStatusFinished(type);
     }
+    
     gd::string getDailyTimeString(int e) {
         auto ret = DailyLevelPage::getDailyTimeString(e);
 
