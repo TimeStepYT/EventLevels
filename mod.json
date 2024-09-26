@@ -1,17 +1,19 @@
 {
-	"geode": "3.4.0",
-	"gd": {
-		"win": "2.206",
-		"android": "2.206",
-		"mac": "2.206",
-		"ios": "2.206"
-	},
-	"id": "timestepyt.eventlevels",
-	"name": "Event Levels",
-	"version": "v1.0.4",
-	"developer": "TimeStepYT",
-	"description": "Allows you to use the Event Levels button",
-    "repository": "https://github.com/Reinmmar/EventLevels",
+    "geode": "3.7.1",
+    "gd": {
+        "win": "2.206",
+        "android": "2.206",
+        "mac": "2.206",
+        "ios": "2.206"
+    },
+    "id": "timestepyt.eventlevels",
+    "name": "Event Levels",
+    "version": "v1.0.5",
+    "developer": "TimeStepYT",
+    "description": "Allows you to use the Event Levels button",
+    "links": {
+        "source": "https://github.com/TimeStepYT/EventLevels"
+    },
     "tags": ["interface", "customization"],
     "dependencies": [
         {
@@ -20,19 +22,19 @@
             "version": ">=v1.10.0"
         }
     ],
-	"settings": {
-		"useDaily": {
-			"name": "Modified Daily Page",
-			"description": "Use a modified version of the <co>Daily Page</c>. Turn off for broken original <cp>Event Levels</c> page",
-			"type": "bool",
-			"default": true
-		},
-		"enablePopup": {
-			"name": "Secret Skip Popup",
-			"description": "Enables secret popup when trying to skip an <cp>Event Level</c>",
-			"type": "bool",
+    "settings": {
+        "useDaily": {
+            "name": "Modified Daily Page",
+            "description": "Use a modified version of the <co>Daily Page</c>. Turn off for broken original <cp>Event Levels</c> page",
+            "type": "bool",
+            "default": true
+        },
+        "enablePopup": {
+            "name": "Secret Skip Popup",
+            "description": "Enables secret popup when trying to skip an <cp>Event Level</c>",
+            "type": "bool",
             "platforms": ["win", "android"],
-			"default": false
-		}
-	}
+            "default": false
+        }
+    }
 }
