@@ -16,8 +16,8 @@ class $modify(MyDailyLevelPage, DailyLevelPage) {
         int randLabel;
     };
     void dailyStatusFinished(GJTimedLevelType type) {
-        if (type == GJTimedLevelType::Event && !Mod::get()->getSettingValue<bool>("useDaily"))
-            type = GJTimedLevelType::Daily;
+        // if (type == GJTimedLevelType::Event && !Mod::get()->getSettingValue<bool>("useDaily"))
+        //     type = GJTimedLevelType::Daily;
 
         DailyLevelPage::dailyStatusFinished(type);
     }

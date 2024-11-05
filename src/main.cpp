@@ -8,6 +8,7 @@ class $modify(MyCreatorLayer, CreatorLayer) {
     void onEventLevel(CCObject * sender) {
         atEvent = true;
         DailyLevelPage::create(GJTimedLevelType::Event)->show();
+        GameLevelManager::sharedState()->onGetGJDailyLevelStateCompleted("200001|10", "event_state");
         return;
     }
     bool init() {
