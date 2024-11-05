@@ -1,5 +1,10 @@
 # Event Levels changelog
 
+## 1.0.6
+- Made the actual <cp>Event Level</c> appear
+- Switched default value of the setting to make the reskinned daily level page appear instead
+- This mod will be discontinued as soon as <cp>Event Levels</c> will be a real thing in the game soon 
+
 ## 1.0.5
 - Fixed github repo link because I changed my username
 - Bumped Geode version

@@ -6,7 +6,7 @@ set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
 set(CMAKE_SUPPRESS_DEVELOPER_WARNINGS 1 CACHE INTERNAL "Suppress cmake developer mode warnings")
 
-project(EventLevels VERSION 1.0.5)
+project(EventLevels VERSION 1.0.6)
 
 add_library(${PROJECT_NAME} SHARED
     src/main.cpp
